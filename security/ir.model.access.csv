@@ -1,1 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+tankhah.access_expense_manager_employee,access_expense_manager_employee,tankhah.model_expense_manager_employee,base.group_user,1,1,1,1
+tankhah.access_expense_manager_expense,access_expense_manager_expense,tankhah.model_expense_manager_expense,base.group_user,1,1,1,1
+tankhah.access_expense_manager_type,access_expense_manager_type,tankhah.model_expense_manager_type,base.group_user,1,1,1,1
+tankhah.access_expense_manager_line,access_expense_manager_line,tankhah.model_expense_manager_line,base.group_user,1,1,1,1
