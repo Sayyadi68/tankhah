@@ -1,13 +1,10 @@
-from odoo import models, fields
+from odoo import fields, models
 
 
 class Employee(models.Model):
-    _name = 'expense.employee'
+    _name = 'expense.manager.employee'
     _description = 'Employee'
 
-    first_name = fields.Char(string='نام', required=True)
-    last_name = fields.Char(string='نام خانوادگی', required=True)
-    employee_code = fields.Char(string='کد پرسنلی', required=True)
-    phone = fields.Char(string='شماره تماس')
-    email = fields.Char(string='ایمیل')
-    active = fields.Boolean(string='فعال', default=True)
+    name = fields.Char(string='نام کارمند', required=True)
+    user_id = fields.Many2one('res.users', string='کاربر', required=True)
+    expense_ids = fields.One2many('expense.manager.expense', 'employee_id', string='درخواست‌های هزینه')
