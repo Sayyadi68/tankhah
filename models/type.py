@@ -6,5 +6,4 @@ class Type(models.Model):
     _description = 'Expense Type'
 
     name = fields.Char(string='نوع هزینه', required=True)
-    description = fields.Text(string='توضیحات')
     line_ids = fields.One2many('expense.manager.line', 'type_id', string='اقلام هزینه')

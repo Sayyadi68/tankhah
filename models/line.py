@@ -7,7 +7,6 @@ class Line(models.Model):
 
     expense_id = fields.Many2one('expense.manager.expense', string='درخواست هزینه', required=True, ondelete='cascade')
     type_id = fields.Many2one('expense.manager.type', string='نوع هزینه', required=True, ondelete='restrict')
-    description = fields.Char(string='شرح هزینه')
     quantity = fields.Float(string='تعداد', required=True, default=1.0)
     unit_price = fields.Float(string='قیمت واحد', required=True)
     total_amount = fields.Float(string='مبلغ کل', compute='_compute_total_amount', store=True)

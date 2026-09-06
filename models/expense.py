@@ -5,7 +5,6 @@ class Expense(models.Model):
     _name = 'expense.manager.expense'
     _description = 'Expense Request'
 
-    name = fields.Char(string='شماره درخواست', required=True)
     employee_id = fields.Many2one('expense.manager.employee', string='کارمند', required=True, ondelete='restrict')
     date = fields.Date(string='تاریخ درخواست', required=True, default=fields.Date.context_today)
     line_ids = fields.One2many('expense.manager.line', 'expense_id', string='اقلام هزینه')
