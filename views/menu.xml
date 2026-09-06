@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem
+                id="tankhah_menu_root"
+                name="تنخواه"
+                web_icon="tankhah,static/description/icon.svg"
+        />
+
+        <menuitem
+                id="menu_tankhah"
+                name="لیست کارمندان"
+                parent="tankhah_menu_root"
+                action="action_employee"
+                sequence="1"/>
+
+<!--        <menuitem-->
+<!--                id="estate_menu_setting"-->
+<!--                name="تنظیمات"-->
+<!--                parent="estate_menu_root"-->
+<!--                sequence="3"/>-->
+
+<!--        <menuitem-->
+<!--                id="estate_menu_estate_property_type"-->
+<!--                name="انواع"-->
+<!--                parent="estate_menu_setting"-->
+<!--                action="action_estate_property_type"/>-->
+
+<!--        <menuitem-->
+<!--                id="estate_menu_estate_property_tag"-->
+<!--                name="تگ"-->
+<!--                parent="estate_menu_setting"-->
+<!--                action="action_estate_property_tag"/>-->
+
+<!--        <menuitem-->
+<!--                id="estate_menu_estate_property_offer"-->
+<!--                name="پیشنهادات"-->
+<!--                parent="estate_menu_root"-->
+<!--                action="action_estate_property_offer"-->
+<!--                sequence="2"/>-->
+    </data>
+</odoo>
