@@ -3,3 +3,4 @@ tankhah.access_expense_manager_employee,access_expense_manager_employee,tankhah.
 tankhah.access_expense_manager_expense,access_expense_manager_expense,tankhah.model_expense_manager_expense,base.group_user,1,1,1,1
 tankhah.access_expense_manager_type,access_expense_manager_type,tankhah.model_expense_manager_type,base.group_user,1,1,1,1
 tankhah.access_expense_manager_line,access_expense_manager_line,tankhah.model_expense_manager_line,base.group_user,1,1,1,1
+access_res_users_base_group_user,tankhah.access.res_users.base_group_user,base.model_res_users,base.group_user,0,0,1,0
