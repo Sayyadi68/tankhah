@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.module.category" id="security_state">,
+        <field name="name">سطوح دسترسی سامانه مدیریت تنخواه</field>
+    </record>
+
+    <record id="group_tankhah_modir_samane" model="res.groups">
+        <field name="name">مدیر سامانه</field>,
+        <field name="category_id" ref="security_state"/>
+    </record>
+
+    <record id="group_tankhah_karmand_samane" model="res.groups">
+        <field name="name">کارمند سامانه</field>,
+        <field name="category_id" ref="security_state"/>
+    </record>
+
+</odoo>

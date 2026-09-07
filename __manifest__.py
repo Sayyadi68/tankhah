@@ -8,13 +8,14 @@
     'license': 'LGPL-3',
     'depends': ['base'],
     'data': [
+        'security/groups.xml',
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/employee_views.xml',
         'views/expence_views.xml',
         'views/menu.xml',
         'views/type_views.xml',
-       
+        'security\ir.model.access.csv',
     ],
     'application': True,
     'installable': True,
