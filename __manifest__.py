@@ -15,7 +15,7 @@
         # 'views/expence_views.xml',
         'views/menu.xml',
         # 'views/type_views.xml',
-        'security\ir.model.access.csv',
+        
     ],
     'application': True,
     'installable': True,
