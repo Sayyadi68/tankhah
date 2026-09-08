@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <record id="rule_expense_manager_expense" model="ir.rule">
+            <field name="name">محدود کردن به دیدن درخواست بقیه کارکنان</field>
+            <field name="model_id" ref="model_expense_manager_expense" />
+            <field name="groups" eval="[(4, ref('group_tankhah_karmand_samane'))]" />
+            <field name="domain_force">[('create_uid', '=', user.id)]</field>
+        </record>
+
+
+    </data>
+
+</odoo>
