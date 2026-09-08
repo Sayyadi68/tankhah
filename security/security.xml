@@ -1,18 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><odoo>
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
 
 
-    
+        <record id="rule_expense_manager_expense" model="ir.rule">
+            <field name="name">محدود کردن به دیدن درخواست بقیه کارکنان</field>
+            <field name="model_id" ref="model_expense_manager_expense" />
+            <field name="groups" eval="[(4, ref('group_tankhah_karmand_samane'))]" />
+            <field name="domain_force">[('create_uid', '=', user.id)]</field>
+        </record>
 
 
-    <record id="rule_expense_manager_expense" model="ir.rule">
-        <field name="name">محدود کردن به دیدن درخواست بقیه کارکنان</field>
-        <field name="model_id" ref="model_expense_manager_expense"/>
-        <field name="groups" eval="[(4, ref('group_tankhah_karmand_samane'))]"/>
-        <field name="domain_force">[(1, '=', 1)]</field>
-        <field name="perm_read" eval="False"/>
-        <field name="perm_write" eval="False"/>
-        <field name="perm_create" eval="False"/>
-        <field name="perm_unlink" eval="False"/>
-    </record>
-    
+    </data>
+
 </odoo>
