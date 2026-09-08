@@ -3,11 +3,11 @@ from odoo import api, fields, models
 
 class Expense(models.Model):
     _name = 'expense.manager.expense'
-    _description = 'Expense Request'
+    _description = 'Purchase Request'
 
     employee_id = fields.Many2one('expense.manager.employee', string='کارمند', required=True, ondelete='restrict')
-    date = fields.Date(string='تاریخ درخواست', required=True, default=fields.Date.context_today)
-    line_ids = fields.One2many('expense.manager.line', 'expense_id', string='اقلام هزینه')
+    date = fields.Date(string='تاریخ', required=True, default=fields.Date.context_today)
+    line_ids = fields.One2many('expense.manager.line', 'expense_id', string='اقلام خرید')
     total_amount = fields.Float(string='جمع کل', compute='_compute_total_amount', store=True)
     state = fields.Selection([('draft', 'پیش‌نویس'), ('submitted', 'ارسال شده'), ('approved', 'تایید شده'), ('rejected', 'رد شده')], string='وضعیت', default='draft', required=True)
 

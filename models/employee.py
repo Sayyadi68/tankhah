@@ -7,4 +7,4 @@ class Employee(models.Model):
     _rec_name = 'user_id'
 
     user_id = fields.Many2one('res.users', string='نام کارمند', required=True)
-    expense_ids = fields.One2many('expense.manager.expense', 'employee_id', string='درخواست‌های هزینه')
+    expense_ids = fields.One2many('expense.manager.expense', 'employee_id', string='خریدها')
